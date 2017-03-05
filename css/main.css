@@ -5,6 +5,7 @@ body {
 /*Make parent element a flex container*/
 ul {
   display: flex; /*or inline-flex*/
+  flex-direction: row;
 
   border: 2px solid red;
 }
@@ -18,3 +19,28 @@ li {
 
   border: 2px solid purple;
 }
+
+/*.block-example, .inline-example, .inline-block-example {
+  width: 100px;
+  height: 100px;
+  /*background: red;*/
+
+  /*margin-bottom: 10px;*/
+}
+
+/*.block-example {
+  display: block;
+
+  background: black;
+}
+.inline-block-example {
+  display: inline-block;
+
+  background: blue;
+}
+.inline-example {
+  display: inline;
+
+
+  background: red;
+}*/
