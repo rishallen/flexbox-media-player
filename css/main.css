@@ -6,6 +6,7 @@ body {
 ul {
   display: flex; /*or inline-flex*/
   flex-direction: row;
+  flex-wrap: wrap;
 
   border: 2px solid red;
 }
