@@ -23,10 +23,25 @@ li {
   margin: 8px;
   padding: 4px;
   list-style: none;
-
+  /*flex-grow: 1;*/
   border: 2px solid purple;
 }
+/*select first li element within the ul */
+    li:nth-child(1) {
+        order: 1; /*give it a value higher than 0*/
+    }
+    li:nth-child(3) {
+        order: 1;
+    }
 
+    /*this is an absolute flex item*/
+li {
+  flex: 1 1; /*flex-basis defaults to 0*/
+}
+/*this is a relative flex item*/
+li {
+  flex-basis: 200px; /*only flex-basis is set*/
+}
 /*.block-example, .inline-example, .inline-block-example {
   width: 100px;
   height: 100px;
