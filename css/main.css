@@ -5,10 +5,15 @@ body {
 /*Make parent element a flex container*/
 ul {
   display: flex; /*or inline-flex*/
-  flex-direction: row;
-  flex-wrap: wrap;
-
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  flex-flow: row wrap;  /*direction "row" and yes, please wrap the items.*/
+  justify-content: flex-start;
+  align-content: center;
   border: 2px solid red;
+  padding: 0;
+  list-style: none;
+  background-color: #e8e8e9;
 }
 
 li {
@@ -16,6 +21,7 @@ li {
   height: 100px;
   background-color: #8cacea;
   margin: 8px;
+  padding: 4px;
   list-style: none;
 
   border: 2px solid purple;
