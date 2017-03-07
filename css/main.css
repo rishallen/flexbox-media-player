@@ -1,68 +1,12 @@
+html,
 body {
-  background-color: #fff;
-}
+    height: 100%; /*setting this explicitly is important*/
 
-/*Make parent element a flex container*/
-ul {
-  display: flex; /*or inline-flex*/
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
-  flex-flow: row wrap;  /*direction "row" and yes, please wrap the items.*/
-  justify-content: flex-start;
-  align-content: center;
-  border: 2px solid red;
-  padding: 0;
-  list-style: none;
-  background-color: #e8e8e9;
-}
+    border: 2px solid red;
+  }
+body {
+    display: flex; /*flex superpowers activated! */
+    flex-direction: column; /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
 
-li {
-  width: 100px;
-  height: 100px;
-  background-color: #8cacea;
-  margin: 8px;
-  padding: 4px;
-  list-style: none;
-  /*flex-grow: 1;*/
-  border: 2px solid purple;
-}
-/*select first li element within the ul */
-    li:nth-child(1) {
-        order: 1; /*give it a value higher than 0*/
-    }
-    li:nth-child(3) {
-        order: 1;
-    }
-
-    /*this is an absolute flex item*/
-li {
-  flex: 1 1; /*flex-basis defaults to 0*/
-}
-/*this is a relative flex item*/
-li {
-  flex-basis: 200px; /*only flex-basis is set*/
-}
-/*.block-example, .inline-example, .inline-block-example {
-  width: 100px;
-  height: 100px;
-  /*background: red;*/
-
-  /*margin-bottom: 10px;*/
-}
-
-/*.block-example {
-  display: block;
-
-  background: black;
-}
-.inline-block-example {
-  display: inline-block;
-
-  background: blue;
-}
-.inline-example {
-  display: inline;
-
-
-  background: red;
-}*/
+    border: 2px solid green;
+  }
